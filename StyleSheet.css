@@ -1,0 +1,567 @@
+﻿body {
+    background: #5A76A1;
+}
+:root {
+    --clr-background: #2F428F
+}
+h1 {
+    font-family: Arial;
+    font-size: 22px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+p {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom:0.2em;
+    margin-top: 0.5em;
+}
+a {
+    font-family: Arial;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+/*Base text ends*/
+
+.maincontainer {
+    width: 1360px;
+    height: 100%;
+    border: 8px solid black;
+    background-color: #2F428F;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 88px 200px 480px;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "main main main main"
+        "recommend1 recommend1 recommend2 recommend2";
+    margin: auto;
+}
+
+nav {
+    border-top: 0px;
+    border-bottom: 8px solid black;
+    padding: 5px 5px 15px 5px;
+    background: #2F428F;
+    grid-area: nav;
+}
+
+.navbar {
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    padding: 5px 5px 15px 5px;
+    font-weight: bold;
+}
+
+/*Home Grid area start*/
+
+main {
+    background: #2F428F;
+    grid-area: main;
+}
+.welcome {
+    width: 100%;
+    height: 200px;
+    border-top: 0px;
+    border-bottom: 5px solid black;
+}
+
+.recommend1 {
+    height: 260px;
+    width: 420px;
+    display: grid;
+    grid-template-columns: subgrid 160px 280px;
+    grid-template-rows: 80px 140px;
+    border: 5px solid black;
+    margin: 5px 10px 5px 10px;
+    grid-area: recommend1;
+}
+
+.reimg {
+    border-right: 3px solid black;
+    height: 260px;
+    width: 160px;
+    grid-area: 1 / 1 / 2 / 1;
+}
+
+.retitle {
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.retext {
+    padding-left: 2em;
+    text-align: left;
+    grid-area: 2 / 2 / 2 / 2
+}
+
+.recommend2 {
+    height: 260px;
+    width: 420px;
+    display: grid;
+    grid-template-columns: subgrid 160px 280px;
+    grid-template-rows: 80px 140px;
+    border: 5px solid black;
+    margin: 5px 10px 5px 10px;
+    grid-area: recommend2;
+}
+
+/*Home content end*/
+
+@media only screen and (max-width: 550px) {
+    .maincontainer {
+        width: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "recommend1"
+        "recommend2";
+    }
+}
+/*Home Ends*/
+
+/*Browse starts*/
+
+.browsecontainer {
+    width: 1360px;
+    height: 100%;
+    border: 8px solid black;
+    background-color: #2F428F;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 88px 100px 133px 133px 133px 133px 50px;
+    grid-template-areas:
+        "nav nav"
+        "main main"
+        "bcont1 btag1"
+        "bcont2 btag2"
+        "bcont3 btag3"
+        "bcont4 btag4"
+        "bpage bpage";
+    margin: auto;
+
+}
+
+.bcont1 {
+    width: 680px;
+    height: 125px;
+    margin: 2px 5px 0px 5px;
+    border: 4px solid black;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 100px 580px;
+    grid-template-rows: 20px 105px;
+    grid-template-areas:
+        "bimg btitle"
+        "bimg btext";
+    grid-area: bcont1;
+}
+
+.bcont2 {
+    width: 680px;
+    height: 125px;
+    margin: 2px 5px 0px 5px;
+    border: 4px solid black;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 100px 580px;
+    grid-template-rows: 20px 105px;
+    grid-template-areas:
+        "bimg btitle"
+        "bimg btext";
+    grid-area: bcont2;
+}
+
+.bcont3 {
+    width: 680px;
+    height: 125px;
+    margin: 2px 5px 0px 5px;
+    border: 4px solid black;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 100px 580px;
+    grid-template-rows: 20px 105px;
+    grid-template-areas:
+        "bimg btitle"
+        "bimg btext";
+    grid-area: bcont3;
+}
+
+.bcont4 {
+    width: 680px;
+    height: 125px;
+    margin: 2px 5px 0px 5px;
+    border: 4px solid black;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 100px 580px;
+    grid-template-rows: 20px 105px;
+    grid-template-areas:
+        "bimg btitle"
+        "bimg btext";
+    grid-area: bcont4;
+}
+
+
+.bimg {
+    width: 105px;
+    height: 125px;
+    border-right: 3px solid black;
+    grid-area: bimg;
+}
+
+.btitle {
+    grid-area: btitle;
+}
+
+.btext {
+    padding-right: 10px;
+    grid-area: btext;
+    text-align: left;
+}
+
+.btag1 {
+    width: 480px;
+    height: 125px;
+    margin: 2px 0px 2px 4px;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 60px 65px;
+    grid-template-areas:
+        "btagbox1 btagbox2"
+        "btagbox3 btagbox4";
+    grid-area: btag1;
+}
+
+.btag2 {
+    width: 480px;
+    height: 125px;
+    margin: 2px 0px 2px 4px;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 60px 65px;
+    grid-template-areas:
+        "btagbox1 btagbox2"
+        "btagbox3 btagbox4";
+    grid-area: btag2;
+}
+
+.btag3 {
+    width: 480px;
+    height: 125px;
+    margin: 2px 0px 2px 4px;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 60px 65px;
+    grid-template-areas:
+        "btagbox1 btagbox2"
+        "btagbox3 btagbox4";
+    grid-area: btag3;
+}
+
+.btag4 {
+    width: 480px;
+    height: 125px;
+    margin: 2px 0px 2px 4px;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 60px 65px;
+    grid-template-areas:
+        "btagbox1 btagbox2"
+        "btagbox3 btagbox4";
+    grid-area: btag4;
+}
+
+
+.btagbox1 {
+    padding-left: 2em;
+    text-align: left;
+    grid-area: btagbox1;
+}
+
+.btagbox2 {
+    text-align: left;
+    grid-area: btagbox2;
+}
+
+.btagbox3 {
+    padding-left: 2em;
+    padding-bottom: 2em;
+    text-align: left;
+    grid-area: btagbox3;
+}
+
+.btagbox4 {
+    padding-bottom: 2em;
+    text-align: left;
+    grid-area: btagbox4;
+}
+
+.bpage {
+    width: 200px;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    grid-area: bpage;
+    margin: auto;
+
+}
+
+.bpage-num {
+    width: 150px;
+    align-self: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+/*Browse content ends*/
+
+@media only screen and (max-width: 600px) {
+    .browsecontainer {
+        width: 550px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 100px repeat(8, 133px) 40px;
+        grid-template-areas:
+            "nav"
+            "main"
+            "bcont1"
+            "btag1"
+            "bcont2"
+            "btag2"
+            "bcont3"
+            "btag3"
+            "bcont4"
+            "btag4"
+            "bpage";
+    }
+    .bcont1 {
+        width: 480px;
+        height: 125px;
+        margin: 2px 5px 0px 5px;
+        border: 4px solid black;
+        display: grid;
+        gap: 0.6rem;
+        grid-template-columns: 100px 380px;
+        grid-template-rows: 20px 105px;
+        grid-template-areas:
+            "bimg btitle"
+            "bimg btext";
+        grid-area: bcont1;
+    }
+
+    .bcont2 {
+        width: 480px;
+        height: 125px;
+        margin: 2px 5px 0px 5px;
+        border: 4px solid black;
+        display: grid;
+        gap: 0.6rem;
+        grid-template-columns: 100px 380px;
+        grid-template-rows: 20px 105px;
+        grid-template-areas:
+            "bimg btitle"
+            "bimg btext";
+        grid-area: bcont2;
+    }
+
+    .bcont3 {
+        width: 480px;
+        height: 125px;
+        margin: 2px 5px 0px 5px;
+        border: 4px solid black;
+        display: grid;
+        gap: 0.6rem;
+        grid-template-columns: 100px 380px;
+        grid-template-rows: 20px 105px;
+        grid-template-areas:
+            "bimg btitle"
+            "bimg btext";
+        grid-area: bcont3;
+    }
+
+    .bcont4 {
+        width: 480px;
+        height: 125px;
+        margin: 2px 5px 0px 5px;
+        border: 4px solid black;
+        display: grid;
+        gap: 0.6rem;
+        grid-template-columns: 100px 380px;
+        grid-template-rows: 20px 105px;
+        grid-template-areas:
+            "bimg btitle"
+            "bimg btext";
+        grid-area: bcont4;
+    }
+}
+/*Browse Ends*/
+
+
+/*Search Starts*/
+
+.searchcontainer {
+    width: 1360px;
+    height: 100%;
+    background-color: #2F428F;
+    border: 5px solid black;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 340px);
+    grid-template-rows: 88px 40px repeat(4, 70px) 800px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "sinfo sinfo sinfo sinfo"
+        "stag1 stag1 stag1 stag1"
+        "stag2 stag2 stag2 stag2"
+        "stag3 stag3 stag3 stag3"
+        "stag4 stag4 stag4 stag4"
+        "smenu smenu smenu smenu";
+}
+
+.sinfo {
+    height: 50px;
+    border-bottom: 5px solid black;
+    text-align: center;
+    justify-content: space-between;
+    grid-area: sinfo;
+}
+
+.stag1 {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    margin: 10px 20px 10px 0px;
+    text-align: center;
+    justify-content: space-around;
+    grid-area: stag1;
+}
+
+.stag2 {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 20px 10px 0px;
+    justify-content: space-around;
+    grid-area: stag2;
+}
+
+.stag3 {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 20px 10px 0px;
+    justify-content: space-around;
+    grid-area: stag3;
+}
+
+.stag4 {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid black;
+    margin: 10px 20px 10px 0px;
+    justify-content: space-around;
+    grid-area: stag4;
+}
+.smenu {
+    width: 100%;
+    display: grid;
+    margin-top: 40px;
+    gap: 0.5rem;
+    grid-area: smenu;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 770px;
+    grid-template-areas:
+        "searchInput"
+        "searchTable";
+
+}
+.searchInput {
+    width: 50%;
+    border: 3px solid black;
+    font-size: 22px;
+    margin: 0px 20px 30px 20px;
+    padding: 10px 20px 10px 40px;
+    margin-bottom: 20px;
+    grid-area: searchInput;
+}
+
+
+.searchTable {
+    border-collapse: collapse;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid black;
+    grid-area: searchTable;
+}
+
+.searchTable th, tr {
+    font-size: 16px;
+    text-align: left;
+    padding: 12px;
+}
+
+.tr.hidden {
+    display: none;
+}
+
+.header {
+    height: 30px;
+}
+.searchTable tr {
+    border-bottom: 1px solid black;
+}
+
+.searchTable tr.header, .searchTable tr:hover {
+    background-color: #5A76A1;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .searchcontainer {
+        width: 500px;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 50px repeat(4, 70px) 1fr;
+        grid-template-areas:
+            "nav nav"
+            "sinfo sinfo"
+            "stag1 stag1"
+            "stag2 stag2"
+            "stag3 stag3"
+            "stag4 stag4"
+            "smenu smenu"
+    }
+}
