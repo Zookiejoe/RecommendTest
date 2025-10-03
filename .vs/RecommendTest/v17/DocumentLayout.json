@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Repos\\RecommendTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD633BAF-90D9-E1BD-94D8-95DF22BBE580}|http://localhost:58514|c:\\users\\laset\\documents\\my web sites\\project\\css\\browse.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD633BAF-90D9-E1BD-94D8-95DF22BBE580}|http://localhost:58514|c:\\users\\laset\\documents\\my web sites\\project\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\StyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD633BAF-90D9-E1BD-94D8-95DF22BBE580}|http://localhost:58514|c:\\users\\laset\\documents\\my web sites\\project\\css\\search.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\Search.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD633BAF-90D9-E1BD-94D8-95DF22BBE580}|http://localhost:58514|c:\\users\\laset\\documents\\my web sites\\project\\css\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\Browse.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\index.html",
               "ToolTip": "C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\index.html",
@@ -61,7 +61,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Browse.html",
               "DocumentMoniker": "C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\Browse.html",
               "ToolTip": "C:\\Users\\laset\\Documents\\My Web Sites\\Project\\css\\Browse.html",
